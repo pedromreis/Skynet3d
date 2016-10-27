@@ -1,6 +1,6 @@
 Quick and dirty howto:
 
-1 - install arduino
+1 - install arduino, tested with 1.6.12
 
 2 - downgrade avr boards to version 1.6.11
 
