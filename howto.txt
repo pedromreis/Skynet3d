@@ -1,25 +1,25 @@
 Quick and dirty howto:
 
-1 - install arduino
+1 - install arduino, tested with 1.6.12
 
 2 - downgrade avr boards to version 1.6.11
+    follow: https://forum.arduino.cc/index.php?topic=419445.0
 
-3 - Install Sanguino firmware, follow http://dustsreprap.blogspot.pt/2015/06/better-way-to-install-sanguino-in.html
+3 - Install Sanguino firmware 
+    follow: http://dustsreprap.blogspot.pt/2015/06/better-way-to-install-sanguino-in.html
 
 Open up the menu   File|Preferences 
 
 At the bottom is a field  Additional Boards manager URLs:
 Enter "https://raw.githubusercontent.com/Lauszus/Sanguino/master/package_lauszus_sanguino_index.json"
 
-
-
 4 - Add to the boards.txt the config about anet
 
-in my system (linux) is in:
+in my linux is in:
 
 ~/.arduino15/packages/Sanguino/hardware/avr/1.0.1/boards.txt
 
-in Mac:
+in my Mac is in:
 
 ~/Library/Arduino15/packages/Sanguino/hardware/avr/1.0.1/boards.txt
 
