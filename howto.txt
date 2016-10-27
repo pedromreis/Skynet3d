@@ -1,0 +1,55 @@
+Quick and dirty howto:
+
+1 - install arduino
+
+2 - downgrade avr boards to version 1.6.11
+
+3 - Install Sanguino firmware, follow http://dustsreprap.blogspot.pt/2015/06/better-way-to-install-sanguino-in.html
+
+Open up the menu   File|Preferences 
+
+At the bottom is a field  Additional Boards manager URLs:
+Enter "https://raw.githubusercontent.com/Lauszus/Sanguino/master/package_lauszus_sanguino_index.json"
+
+
+
+4 - Add to the boards.txt the config about anet
+
+in my system (linux) is in:
+
+~/.arduino15/packages/Sanguino/hardware/avr/1.0.1/boards.txt
+
+in Mac:
+
+~/Library/Arduino15/packages/Sanguino/hardware/avr/1.0.1/boards.txt
+
+add:
+########################################
+## Anet V1 (sanguino clone)
+########################################
+anet.name=Anet V1.0
+
+anet.upload.tool=arduino:avrdude
+anet.upload.protocol=arduino
+anet.upload.maximum_size=131072
+anet.upload.speed=57600
+
+anet.bootloader.low_fuses=0xD6
+anet.bootloader.high_fuses=0xDA
+anet.bootloader.extended_fuses=0xFD
+anet.bootloader.path=atmega
+anet.bootloader.unlock_bits=0x3F
+anet.bootloader.lock_bits=0x0F
+
+anet.build.mcu=atmega1284p
+anet.build.f_cpu=16000000L
+anet.build.board=AVR_SANGUINO
+anet.build.core=arduino:arduino
+anet.build.variant=sanguino
+
+###CHANGE ME###anet.bootloader.file=ATmegaBOOT_168_atmega1284p.hex
+
+5 - Optional copy the bootloader to /Library/Arduino15/packages/Sanguino/hardware/avr/1.0.1/bootloaders
+
+
+
