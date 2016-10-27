@@ -5,6 +5,6 @@ Wonderfull work and all credits to  Scou @skynet3ddevelopment
 
 I'm not the developer, just putting together all the pieces for development and install.
 
-Follow hotto.txt to install.
+Follow howto.txt to install.
 
 Enjoy!
